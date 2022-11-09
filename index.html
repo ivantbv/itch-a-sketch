@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Etch-A-Screech</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h2>Save-A-Sketch</h2>
+<div class="main-wrapper">  
+    <div class="grid-wrapper"> 
+        <div class="container"></div>
+    </div>   
+    <div class="menu">
+        <div class="input-number">
+            <p>Grid size</p>
+            <input type="number" max="100" class="input-size" value="34">
+            <button class="btn-input">Set</button>
+        </div>
+
+        <div class="input-range">
+            <input type="range" id="border-radius" name="border-radius" 
+                min="0" max="100" value="0" step="10">
+            <label for="border-radius">Cell radius</label>
+        </div>
+
+        <div class="clear-grid">
+            <button class="clear-all">Clear Grid</button>
+        </div>
+
+        <div class="checkbox-toggle-grid">
+            <span> Toggle grid On/Off</span>
+            <input type="checkbox" id="toggle-grid" name="toggle-grid" checked>
+                <label for="toggle-grid" id="buttonOne">
+
+                    <div id="knobOne"></div>
+                    <div id="subscribeOne">On</div>
+                    <div id="alrightOne">Off</div>
+                </label>
+        </div>
+
+        <div class="erase-mode">
+            <input type="checkbox" id="lol-checkbox">
+
+            <label id="button" for="lol-checkbox">
+            <div id="knob"></div>
+            <div id="subscribe">Eraser</div>
+            <div id="alright">Draw</div>
+            </label>
+        </div>
+
+        <div class="input-color">
+            <p>Choose color</p>
+            <input type="color" id="color-pick" value="#392D36">
+        </div>
+
+
+    </div>
+</div>
+    <div class="img-container">
+        <button class="take-screen">Save Sketch as PNG</button>
+    <!-- <img width="75%" class="screen"> -->
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

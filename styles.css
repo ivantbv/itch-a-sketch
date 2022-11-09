@@ -1,0 +1,246 @@
+body {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+h2 {
+  padding-top: 0;
+  margin-top: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.main-wrapper {
+  display: flex;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid black;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    /* width: 257px;
+    height: 256px; */
+    width: 550px;
+    height: 550px;
+
+    border: .5px solid black;
+    align-content: start;
+  
+}
+
+.square {
+    margin: 0;
+     /* width: 20px;
+    height: 20px; */
+    outline: 1px solid grey;
+    flex: 1 1 auto;
+}
+
+.addColorToDiv {
+    background: rgb(0, 0, 0);
+}
+
+.input-size {
+    margin-top: 10px;
+    padding-top: 1px;
+    width: 100px;
+    text-align: center;
+}
+
+/* input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+
+input[type=number] {
+  -moz-appearance: textfield;
+} */
+
+.input-number {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: -10px;
+    border-bottom: 2px solid black;
+    font-weight: 600;
+    padding: 0 99px;
+}
+
+.input-number p {
+  margin-bottom: 0;
+  font-weight: 600;
+  font-family: Arial;
+}
+
+.input-range {
+  display: flex;
+  flex-direction: column-reverse;
+  border-bottom: 2px solid black;
+  padding: 2px 86px;
+  align-items: center;
+  font-weight: 600;
+  font-family: arial;
+}
+
+.clear-grid {
+    border-bottom: 2px solid black;
+    padding: 7px 92px;
+}
+
+.checkbox-toggle-grid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: 2px solid black;
+    margin-bottom: -24px;
+    font-weight: 600;
+    font-family: arial;
+}
+
+.input-color {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: arial;
+  font-weight: 600;
+  border-top: 2px solid black;
+  padding: 3px 100px;
+}
+
+.input-color p {
+  margin: 3px 0;
+}
+
+.img-container {
+  margin-top: 10px;
+}
+
+.erase-mode {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: -21px;
+}
+
+.erase-mode input[type="checkbox"], .checkbox-toggle-grid input[type="checkbox"] {
+    display: none;
+  }
+  
+  #button, #buttonOne {
+    position: relative;
+    display: block;
+    width: 306px;
+    height: 96px;
+    background-color: #000;
+    border-radius: 269px;
+    cursor: pointer;
+    transform: scale(0.4);
+    margin: 0px auto;
+  }
+  
+  #knob, #knobOne {
+    width: 103px;
+    height: 61px;
+    background-image: url(https://htmlcolorcodes.com/assets/images/colors/white-color-solid-background-1920x1080.png);
+    background-size: 632px;
+    position: relative;
+    top: 16px;
+    left: 22px;
+    border-radius: 191px;
+    transition: 0.4s ease left, 0.4s ease background-position;
+    z-index: 2;
+  }
+  
+  #subscribe,
+  #alright, 
+  #subscribeOne, #alrightOne {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #fff;
+    font-size: 33px;
+    font-weight: bold;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    margin-left: 188px;
+    z-index: 1;
+  }
+  
+  #alright, #alrightOne {
+    margin-left: 30px;
+  }
+  
+  #lol-checkbox:checked + #button #knob,
+  #toggle-grid:checked + #buttonOne #knobOne {
+    left: 189px;
+    background-position: -140px 0;
+  }
+
+  input[type="color"] {
+    -webkit-appearance: none;
+    border: none;
+    width: 106px;
+    height: 61px;
+    background: none;
+    cursor: pointer;
+  }
+  input[type="color"]::-webkit-color-swatch-wrapper {
+    padding: 0;
+    border-radius: 50px;
+  }
+  input[type="color"]::-webkit-color-swatch {
+    border: none;
+    border-radius: 40px;
+  }
+
+
+.btn-input, .take-screen, .clear-all {
+  background-color: #111827;
+  border: 1px solid transparent;
+  border-radius: .75rem;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  flex: 0 0 auto;
+  font-family: "Inter var",ui-sans-serif,system-ui,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+  font-size: 1.125rem;
+  font-weight: 600;
+  line-height: 1.5rem;
+  padding: .75rem 1.2rem;
+  text-align: center;
+  text-decoration: none #6B7280 solid;
+  text-decoration-thickness: auto;
+  transition-duration: .2s;
+  transition-property: background-color,border-color,color,fill,stroke;
+  transition-timing-function: cubic-bezier(.4, 0, 0.2, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: auto;
+}
+
+.btn-input:hover, .take-screen:hover, .clear-all:hover {
+  background-color: #374151;
+}
+
+.btn-input:focus, .take-screen:focus, .clear-all:focus {
+  box-shadow: none;
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+
+/* @media (min-width: 768px) {
+  .btn-input, .take-screen, .clear-all {
+    padding: .75rem 1.5rem;
+  }
+} */
